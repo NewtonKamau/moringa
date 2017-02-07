@@ -1,0 +1,33 @@
+h1 ,h2 , h3 ,h4 , h5{
+  color: white;
+  background-color: #c61aff;
+  background: #669999;
+  padding:15px , 25px ,20px ,15px;
+  margin-left: 20px;
+  margin-top: 25;
+  margin-right: auto;
+  margin-bottom: auto;
+  border-top: 5px;
+  border-left: 5px;
+  border- bottom:5px
+  
+
+}
+{
+  color: blue;
+}
+
+p {
+  font-family:"Aerial black" Gadget, "san-serif" ;
+
+}
+div *{font-family: "sans-serif",fantasy,monospace;}
+.vern{
+  font-family: sans-serif;
+  color: purple;
+}
+.band{
+  color: #66ffff;
+  font-weight: bold;
+  font-style: italic;
+}

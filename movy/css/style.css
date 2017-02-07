@@ -1,0 +1,19 @@
+/*.jumbotron img {
+    background-size: 100%;
+}*/
+
+body img {
+    width: 100%;
+    height: 50%;
+}
+
+.content {
+    text-align: center;
+    margin: 0px;
+    padding-bottom: 80px;
+}
+
+#subscrb {
+    width: 70%;
+    height: auto;
+}

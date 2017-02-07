@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <meta charset="utf-8">
+   <link rel="stylesheet" href="build/css/vendor.css">
+   <link rel="stylesheet" href="build/css/styles.css">
+   <script src="build/js/vendor.min.js"></script>
+   <script type="text/javascript" src="build/js/app.js"></script>
+   <title>GitHub look up</title>
+ </head>
+ <body>
+
+   <div class="container">
+     <div class="jumbotron">
+       <h1>Search GitHub Username Here:</h1>
+       <form>
+         <label for="userName">Enter username here: </label>
+         <input type="text" id="userName">
+         <button type="button" id="searchName" class="btn btn-lg"> Search Username</button>
+       </form>
+       <div class="showUser">
+         <img id="userPic"/>
+       </div>
+       <div id="showRepos">
+         <ul id="repoUrl">
+
+         </ul>
+       </div>
+     </div>
+   </div>
+ </body>
+</html>

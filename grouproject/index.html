@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Fix-It!- all we are about</title>
+
+
+    <link href="css/bootstrap-glyphicons.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+
+    <link href="css/bootstrap-social.css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+
+
+    <link href="css/grayscale.min.css" rel="stylesheet">
+    <link href="css/grayscale.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <i class="fa fa-play-circle"></i> <span class="light">Fix</span>-It!
+                </a>
+            </div>
+
+
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">Services</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+
+                    <li> <button id="signup-btn" type="button" class="btn btn-default" data-toggle="modal" data-target="#signup">Sign Up</button></li>
+                    <li> <button id="login-btn" type="button" class="btn btn-default" data-toggle="modal" data-target="#login">Log In</button></li>
+                    <li><span id="name"></span></li>
+
+
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!--Sign Up-->
+    <div class="modal fade" id="signup" tabindex="-1" role="dialog" aria=labelledby="signupLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <!--modal header-->
+                <div class="modal-header">
+
+                    <div class="row">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a class="btn btn-block btn-social btn-facebook">
+                                <span class="fa fa-facebook"></span> Sign in with Facebook
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <a class="btn btn-block btn-social btn-twitter">
+                                <span class="fa fa-twitter"></span> Sign in with Twitter
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                <!--end of modal header-->
+
+                <!--modal-body-->
+                <form action="">
+                    <div class="modal-body">
+
+
+                        <div class="row">
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="first-name" placeholder="First Name">
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="Last-name" placeholder="Last Name">
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="email" placeholder="your@email.com">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="password" placeholder="Password">
+                        </div>
+                        <label for=""><input type="checkbox">By creating an account, you agree to the <a href="#">Terms &amp; conditions</a></label>
+
+                    </div>
+                    <!-- end-of-modal-body-->
+
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-success">Create Account</button>
+                    </div>
+                </form>
+
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+
+
+    <!--Log In-->
+    <div class="modal fade" id="login" tabindex="-1" role="dialog" aria=labelledby="signupLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <!--modal header-->
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title text-center">Log In</h4>
+                </div>
+                <!--end of modal header-->
+
+                <!--modal-body-->
+                <div class="modal-body">
+                    <form id="loginform" action="">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="username" placeholder="Username">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="loginpassword" placeholder="Password">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-lg btn-success center-block" data-dismiss="modal">Log In</button>
+                        </div>
+                    </form>
+                </div>
+                <!-- end-of-modal-body-->
+
+
+
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+
+    <!--header selection-->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">Fix-it!</h1>
+                        <p class="intro-text">A company that aims to provide quality services to our clients.
+                            <br>"Provide more services than what you pay for!"</p>
+                        <a href="#about" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--about selection-->
+    <section id="about" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>About</h2>
+                <p> Why is it so difficult to find service providers in your own locality? Current solutions do a horrible job, giving you hundreds of useless phone numbers and even more useless options. And leave you all alone, scared and tired to do the
+                    research. You spend days asking about availability, prices, expertise, experience, services offered etc. with no beacon of quality in sight. Fix-it.com is here to fix all your problems. We are your SEARCH ENGINE who do the dirty work
+                    of screening, filtering and assembling a great panel of reliable service providers who will get your work done! Every expert on our platform has been professionally verified and background checked by us. Our amazing matching algorithms
+                    make sure that you get connected to the right service expert, in seconds. So let us worry about your service needs while you chill with a nice hot cup of coffee.</p>
+
+                <p>Fix is an online platform that connects service providers (Fix) and Service consumers (Consumer). It enhances service provider's (Fix) discover ability and accessibility, brings Optimum service with high perfomance and ease at both ends.</p>
+
+                <p>All service provider (Fix) on Fix-it!.com. is specially vetted and verified ensuring every services consumer utilizing the Fix-it!.com. platform is safe and secured to get quality service. Fix guarantees every user security and privacy.
+                    "Safe Speed" is a keyword on this platform. Despite all claims and assurances, every user is mandated to read and agree to our Terms of use and Privacy Policy before utilizing the service offered by the platform (Fix-it!.com).</p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!--services section-->
+    <div class="container">
+        <section id="services" class="content-section text-center">
+            <h1>services</h1>
+            <div class="row">
+                <div class="col-sm-6 col-md-3 col-md-offset-1">
+                    <div class="thumbnail" id="workers">
+                        <img src="images/plumber.png" alt="...">
+                        <div id="caption">
+                            <h3>mechanics</h3>
+                            <p>We have the best of mechanics who fix engines.</p>
+                            <p><a href="services.html" class="btn btn-primary" id="button" role="button">view</a> </p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-sm-6 col-md-3 col-md-offset-1">
+                    <div class="thumbnail" id="workers">
+                        <img src="images/electrician.png" alt="...">
+                        <div id="caption">
+                            <h3>electricians</h3>
+                            <p>We the best of electricians with good skills.</p>
+                            <p><a href="services.html" class="btn btn-primary" id="button" role="button">view</a> </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 col-md-offset-1">
+                    <div class="thumbnail" id="workers">
+                        <img src="images/plumber.png" alt="...">
+                        <div id="caption">
+                            <h3>plumbers</h3>
+                            <p>Our plumbers are well equiepped and very skilled</p>
+                            <p><a href="services.html" class="btn btn-primary" id="button" role="button">view</a> </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!--contact selection-->
+    <section id="contact" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Contact Fix-it!</h2>
+                <p>Feel free to email us for questions or to just say hello!</p>
+                <p><a href="mailto:contact@fix-it.com">contact@Fix-it.com</a>
+                </p>
+                <ul class="list-inline banner-social-buttons">
+                    <li>
+                        <a href="https://twitter.com/Fix-it" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                    </li>
+                    <li>
+                        <a href="https://instagram.com/Fix-it" class="btn btn-default btn-lg"><i class="fa fa-instagram fa-fw"></i> <span class="network-name">Instagram</span></a>
+                    </li>
+                    <li>
+                        <a href="https://facebook.com/Fix-it" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!--footer selection-->
+    <footer>
+        <div class="container text-center">
+            <p>Copyright &copy; Fix-It! 2016</p>
+        </div>
+    </footer>
+
+    <script src="vendor/jquery/jquery.js"></script>
+
+
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+
+
+    <script src="js/grayscale.min.js"></script>
+
+</body>
+
+</html>

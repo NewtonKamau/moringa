@@ -1,0 +1,17 @@
+{
+  "name": "ip",
+  "homepage": "https://github.com/NewtonKamau/dom",
+  "authors": [
+    "NewtonKamau <kamaunewton78@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

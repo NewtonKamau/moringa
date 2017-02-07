@@ -1,0 +1,88 @@
+/*
+
+My Custom CSS
+=============
+
+/* --------------------------------------
+   Layout
+   -------------------------------------- */
+
+@font-face {
+    font-family: drifttype;
+    src: url(../fonts/Drifttype.ttf);
+}
+
+#mechanics {
+    display: none;
+}
+
+#plumbers {
+    display: none;
+}
+
+body {
+    margin-top: 20px;
+    background: url(../images/back.jpg);
+}
+
+.heading {
+    margin-bottom: 20px
+}
+
+.heading h1 {
+    color: white;
+    font-family: drifttype;
+    font-size: 50px;
+}
+
+#electricians #mechanics #plumbers {
+    margin-top: 60px;
+    font-size: 14px;
+    font-family: "Helvetica Nueue", Arial, Verdana, sans-serif;
+}
+
+.service-btn button {
+    border: white solid 1px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5)
+}
+
+
+/* --------------------------------------
+   Typography
+   -------------------------------------- */
+
+
+/* --------------------------------------
+   Navbar
+   -------------------------------------- */
+
+
+/* --------------------------------------
+   Carousel
+   -------------------------------------- */
+
+
+/* --------------------------------------
+   Global Styles
+   -------------------------------------- */
+
+
+/* --------------------------------------
+   Media Queries
+   -------------------------------------- */
+
+
+/* Portrait & landscape phone */
+
+@media (max-width: 480px) {}
+
+
+/* Landscape phone to portrait tablet */
+
+@media (max-width: 768px) {}
+
+
+/* Large desktop */
+
+@media (min-width: 1200px) {}
